@@ -1,0 +1,1 @@
+include ':app', ':app-release', ':flutter-release', ':flutter-debug'
