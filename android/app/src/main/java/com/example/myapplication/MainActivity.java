@@ -1,13 +1,17 @@
 package com.example.myapplication;
 
-import android.app.Activity;
 import android.os.Bundle;
 
-public class MainActivity extends Activity {
+import io.flutter.app.FlutterActivity;
+import io.flutter.plugins.GeneratedPluginRegistrant;
+import io.flutter.view.FlutterMain;
+
+public class MainActivity extends FlutterActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+        FlutterMain.startInitialization(this);
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+        GeneratedPluginRegistrant.registerWith(this);
 	}
 }
